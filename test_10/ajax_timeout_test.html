@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="ajax_timeout_test.js"></script>
+  </head>
+  <body>
+    <h1>jQuery Timeout Test</h1>
+
+    <p>Previous test result: <span id="test_result"></span></p>
+    <p>Total number of tests: <span id="test_count"></span></p>
+    <p>Number of passed tests without retries: <span id="pass_no_retry_count"></span></p>
+    <p>Number of passed tests after retrying: <span id="pass_after_retry_count"></span></p>
+    <p>Number of failures (even after retries): <span id="fail_count"></span></p>
+    <p>Average interval between tests: <span id="average_interval"></span>ms (expected: <span id="expected_interval"></span>ms)</p>
+    <p id="retry_state_info">
+      Is retry in progress: <span id="is_retrying"></span>
+    </p>
+    <p id="retry_count_info">
+      Retry #<span id="retry_count"></span> of <span id="retry_max"></span>
+    </p>
+  </body>
+</html>
