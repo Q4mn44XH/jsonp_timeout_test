@@ -11,9 +11,11 @@ Explorer 9 or Internet Explorer 10. Subsequent tests revealed that
 such random failures occurred even while using other major browsers
 running on Microsoft Windows 7 but extremely infrequently. Finally, no
 such failures were observed when the client browsers were running on
-Linux operating system. This repository contains simplified versions
-of our client and server code that illustrate the basic problem and
-may be used to help debug this issue. 
+Linux operating
+system. [This](https://github.com/Q4mn44XH/jsonp_timeout_test)
+repository contains simplified versions of our client and server code
+that illustrate the basic problem and may be used to help debug this
+issue.
 
 We have a simple Python HTTP server that responds to JSONP
 requests. JavaScript (jQuery-based) running in a web browser
