@@ -17,11 +17,66 @@ repository contains simplified versions of our client and server code
 that illustrate the basic problem and may be used to help debug this
 issue. Their operation is summarized below. 
 
+Python HTTP Server
+------------------
+
+The folder `jsonp_server` contains a simplified version of our HTTP
+server in the file named `test_server.py`. It assumes that all GET
+requests are jQuery
+[JSONP](http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/)
+requests. It responds to the JSONP requests with a callback parameter
+that is a JavaScript object with a property named `result` whose value
+is randomly set to either `true` or `false`.
+
+The server is implemented as a Python 2.7
+[`BaseHTTPServer.HTTPServer`](http://docs.python.org/2/library/basehttpserver.html#BaseHTTPServer.HTTPServer)
+with a custom request handler implemented as a subclass of
+[`BaseHTTPServer.BaseHTTPRequestHandler`](http://docs.python.org/2/library/basehttpserver.html#BaseHTTPServer.BaseHTTPRequestHandler). 
+
 Test 01
 -------
 
 
-Test 10
-------- 
+Test01 Results
+--------------
 
+All tests were performed on a machine running 64-bit Windows 7
+Ultimate with Service Pack 1. The following browsers were used during
+the tests:
+
+<table>
+  <th>
+    <td>Browser</td>
+    <td>Version</td>
+  </th>
+  <tr>
+    <td>Microsoft Internet Explorer</td>
+    <td>10.0.9200.16721</td>
+  </tr>
+  <tr>
+    <td>Google Chrome</td>
+    <td>30.0.1599.101 m</td>
+  </tr>
+</table>
+
+Only one browser was running the client code at any given time during
+these tests. The test results are shown below:
+
+<table>
+  <th>
+    <td>Browser</td>
+    <td>Number of Tests</td>
+    <td>Number of Failures</td>
+  </th>
+  <td>
+    <td>Microsoft Internet Explorer</td>
+    <td>101</td>
+    <td>42</td>
+  </td>
+  <td>
+    <td>Google Chrome</td>
+    <td>150</td>
+    <td>0</td>
+  </td>
+</table>
 
