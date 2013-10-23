@@ -44,39 +44,21 @@ All tests were performed on a machine running 64-bit Windows 7
 Ultimate with Service Pack 1. The following browsers were used during
 the tests:
 
-<table>
-  <tr>
-    <th>Browser</th>
-    <th>Version</th>
-  </tr>
-  <tr>
-    <td>Microsoft Internet Explorer</td>
-    <td>10.0.9200.16721</td>
-  </tr>
-  <tr>
-    <td>Google Chrome</td>
-    <td>30.0.1599.101 m</td>
-  </tr>
-</table>
+    +-------------------------------+-----------------+
+    |           Browser             |     Version     |
+    +-------------------------------+-----------------+
+    | Microsoft Internet Explorer   | 10.0.9200.16721 |
+    | Google Chrome                 | 30.0.1599.101 m |
+    +-------------------------------+-----------------+
 
 Only one browser was running the client code at any given time during
 these tests. The test results are shown below:
 
-<table>
-  <tr>
-    <th>Browser</th>
-    <th>Number of Tests</th>
-    <th>Number of Failures</th>
-  </tr>
-  <tr>
-    <td>Microsoft Internet Explorer</td>
-    <td>101</td>
-    <td>42</td>
-  </tr>
-  <tr>
-    <td>Google Chrome</td>
-    <td>150</td>
-    <td>0</td>
-  </tr>
-</table>
+    +-------------------------------+--------------+--------------+
+    |           Browser             |  Total Tests | Failed Tests |
+    +-------------------------------+--------------+--------------+
+    | Microsoft Internet Explorer   |    101       |     42       |
+    | Google Chrome                 |    150       |      0       |
+    +-------------------------------+--------------+--------------+
+
 
