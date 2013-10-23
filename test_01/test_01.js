@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("ready!") ;
     var test_count = 0 ;
     var pass_count = 0 ;
     var fail_count = 0 ;
