@@ -29,9 +29,8 @@ class MyRequestHandler(BaseHTTPRequestHandler):
                                                  json.dumps({ 'result' : result })) )
             return
         except IOError as errorInst:
-            self.send_error( httplib.INTERNAL_SERVER_ERROR,
-                             'do_GET(): Internal server error while processing: %s (%s)' % (self.path, str(errorInst)) )
-            
+            error_message = 'do_GET(): Internal server error while processing: {0} ({1})'.format(self.path, str(errorInst))
+            self.send_error( httplib.INTERNAL_SERVER_ERROR, error_message )
             return 
 
 def main():
