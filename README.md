@@ -45,10 +45,10 @@ Ultimate with Service Pack 1. The following browsers were used during
 the tests:
 
 <table>
-  <th>
-    <td>Browser</td>
-    <td>Version</td>
-  </th>
+  <tr>
+    <th>Browser</th>
+    <th>Version</th>
+  </tr>
   <tr>
     <td>Microsoft Internet Explorer</td>
     <td>10.0.9200.16721</td>
@@ -63,11 +63,11 @@ Only one browser was running the client code at any given time during
 these tests. The test results are shown below:
 
 <table>
-  <th>
-    <td>Browser</td>
-    <td>Number of Tests</td>
-    <td>Number of Failures</td>
-  </th>
+  <tr>
+    <th>Browser</th>
+    <th>Number of Tests</th>
+    <th>Number of Failures</th>
+  </tr>
   <td>
     <td>Microsoft Internet Explorer</td>
     <td>101</td>
