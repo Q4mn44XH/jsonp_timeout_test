@@ -68,15 +68,15 @@ these tests. The test results are shown below:
     <th>Number of Tests</th>
     <th>Number of Failures</th>
   </tr>
-  <td>
+  <tr>
     <td>Microsoft Internet Explorer</td>
     <td>101</td>
     <td>42</td>
-  </td>
-  <td>
+  </tr>
+  <tr>
     <td>Google Chrome</td>
     <td>150</td>
     <td>0</td>
-  </td>
+  </tr>
 </table>
 
