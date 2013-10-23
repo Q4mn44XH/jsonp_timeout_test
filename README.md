@@ -132,4 +132,7 @@ these tests. The test results are shown below:
     | Google Chrome                 |    150       |      0       |
     +-------------------------------+--------------+--------------+
 
+As seen here, a large number of tests failed while running Internet
+Explorer while Chrome had no failures.
 
+Any ideas why this could be happening?
